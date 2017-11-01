@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+        if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+            var root = document.getElementsByTagName('html')[0];
+            root.setAttribute('class', 'ff');
+        };
+    </script>
+<link href="style.css" rel="stylesheet"></head>
+<body class="demo-3">
+<audio src="assets/lux.mp3"></audio>
+<div class="pre-loader">
+    <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+    </div>
+</div>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="wrap">
+                <div class="resume">RESUME</div>
+                <button type="button" class="hamburger tcon tcon-menu--xbutterfly"
+                        aria-label="toggle menu">
+                    <span class="tcon-menu__lines" aria-hidden="true"></span>
+                    <span class="tcon-visuallyhidden">toggle menu</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="global-menu">
+        <div class="global-menu__wrap">
+            <a data-menuanchor="Hello" class="global-menu__item global-menu__item--demo-3"
+               href="#Hello">Hello</a>
+            <a data-menuanchor="AboutMe" class="global-menu__item global-menu__item--demo-3"
+               href="#AboutMe">About</a>
+            <a data-menuanchor="Experience" class="global-menu__item global-menu__item--demo-3"
+               href="#Experience">Experience</a>
+            <a data-menuanchor="Service" class="global-menu__item global-menu__item--demo-3"
+               href="#Service">Service</a>
+            <a data-menuanchor="LastWorks" class="global-menu__item global-menu__item--demo-3"
+               href="#LastWorks">Last Works</a>
+            <a class="global-menu__item global-menu__item--demo-3"
+               href="">Works</a>
+            <a data-menuanchor="Contact" class="global-menu__item global-menu__item--demo-3"
+               href="#Contact">Contact</a>
+        </div>
+    </div>
+    <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path class="shape-overlays__path"/>
+        <path class="shape-overlays__path"/>
+        <path class="shape-overlays__path"/>
+    </svg>
+</header>
+<div class="container">
+    <div class="content">
+        <!-- trianglify pattern container -->
+        <div class="pattern pattern--hidden"></div>
+        <!-- cards -->
+        <div class="wrapper">
+            <div class="card">
+                <div class="card__container card__container--closed">
+                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                            <clipPath id="clipPath1">
+                                <polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+                            </clipPath>
+                        </defs>
+                        <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="assets/a.jpg"></image>
+                    </svg>
+                    <div class="card__content">
+                        <i class="card__btn-close fa fa-times"></i>
+                        <div class="card__caption">
+                            <h2 class="card__title"><a href="">realhouse.uz</a></h2>
+                            <p class="card__subtitle">A modern day love story</p>
+                        </div>
+                        <div class="card__copy">
+                            <div class="meta">
+                                <img class="meta__avatar" src="assets/1.png" alt="author01" />
+                                <span class="meta__date">06/19/2015</span>
+                            </div>
+                            <p>Technologies:</p>
+                            <div class="skills">
+                                <div class="title">Front-end:</div>
+                                Html, Css3, JavaScript, Jquery, NPM
+                            </div>
+                            <div class="skills">
+                                <div class="title">Backend-end:</div>
+                                Laravel, Mysql, PHP7
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /cards -->
+    </div><!-- /content -->
+</div>
+<script src="js/trianglify.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/ScrollToPlugin.min.js"></script>
+<script src="js/cash.min.js"></script>
+<script src="js/Card-polygon.js"></script>
+<script src="js/demo-3.js"></script>
+<script type="text/javascript" src="main.js"></script></body>
+</html>
